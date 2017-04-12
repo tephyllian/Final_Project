@@ -23,9 +23,9 @@ namespace Final_Project
                 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
