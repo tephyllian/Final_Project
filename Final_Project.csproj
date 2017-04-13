@@ -61,12 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logins.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Logins.Designer.cs">
-      <DependentUpon>Logins.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -78,18 +72,41 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewLoginsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLoginsForm.Designer.cs">
+      <DependentUpon>NewLoginsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="StaffDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StaffDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Logins.resx">
-      <DependentUpon>Logins.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="ViewAllLoginsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllLoginsForm.Designer.cs">
+      <DependentUpon>ViewAllLoginsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllStaffForm.Designer.cs">
+      <DependentUpon>ViewAllStaffForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLoginsForm.resx">
+      <DependentUpon>NewLoginsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +117,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ViewAllLoginsForm.resx">
+      <DependentUpon>ViewAllLoginsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllStaffForm.resx">
+      <DependentUpon>ViewAllStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="LoginsDataSet.xsc">
       <DependentUpon>LoginsDataSet.xsd</DependentUpon>
     </None>
@@ -120,6 +143,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ReservationDataSet.xsc">
+      <DependentUpon>ReservationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReservationDataSet.xss">
+      <DependentUpon>ReservationDataSet.xsd</DependentUpon>
+    </None>
     <None Include="StaffDataSet.xsc">
       <DependentUpon>StaffDataSet.xsd</DependentUpon>
     </None>

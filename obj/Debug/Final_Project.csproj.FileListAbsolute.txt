@@ -4,9 +4,10 @@ C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Pro
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\bin\Debug\Final_Project.exe
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\bin\Debug\Final_Project.pdb
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.csprojResolveAssemblyReference.cache
-C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.Logins.resources
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.Main.resources
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.Properties.Resources.resources
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.csproj.GenerateResource.Cache
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.exe
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.pdb
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.ViewAllLoginsForm.resources
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.NewLoginsForm.resources
