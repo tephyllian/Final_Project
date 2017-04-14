@@ -61,52 +61,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerModelController.cs" />
+    <Compile Include="CustomerViewController.cs" />
+    <Compile Include="EmployeeModelController.cs" />
+    <Compile Include="EmployeeViewController.cs" />
+    <Compile Include="LoginModelController.cs" />
     <Compile Include="LoginsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LoginsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="LoginViewController.cs" />
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewLoginsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewLoginsForm.Designer.cs">
-      <DependentUpon>NewLoginsForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="ModelController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReservationDataSet.Designer.cs">
+    <Compile Include="RoomDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ReservationDataSet.xsd</DependentUpon>
+      <DependentUpon>RoomDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RoomModelController.cs" />
+    <Compile Include="RoomViewController.cs" />
     <Compile Include="StaffDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StaffDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ViewAllLoginsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewAllLoginsForm.Designer.cs">
-      <DependentUpon>ViewAllLoginsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewAllStaffForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewAllStaffForm.Designer.cs">
-      <DependentUpon>ViewAllStaffForm.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewLoginsForm.resx">
-      <DependentUpon>NewLoginsForm.cs</DependentUpon>
+    <Compile Include="ViewController.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,12 +111,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ViewAllLoginsForm.resx">
-      <DependentUpon>ViewAllLoginsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewAllStaffForm.resx">
-      <DependentUpon>ViewAllStaffForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="CustomerDataSet.xsc">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerDataSet.xss">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
     <None Include="LoginsDataSet.xsc">
       <DependentUpon>LoginsDataSet.xsd</DependentUpon>
     </None>
@@ -143,16 +142,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="ReservationDataSet.xsc">
-      <DependentUpon>ReservationDataSet.xsd</DependentUpon>
+    <None Include="RoomDataSet.xsc">
+      <DependentUpon>RoomDataSet.xsd</DependentUpon>
     </None>
-    <None Include="ReservationDataSet.xsd">
+    <None Include="RoomDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ReservationDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>RoomDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ReservationDataSet.xss">
-      <DependentUpon>ReservationDataSet.xsd</DependentUpon>
+    <None Include="RoomDataSet.xss">
+      <DependentUpon>RoomDataSet.xsd</DependentUpon>
     </None>
     <None Include="StaffDataSet.xsc">
       <DependentUpon>StaffDataSet.xsd</DependentUpon>
