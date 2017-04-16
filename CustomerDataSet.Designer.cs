@@ -876,11 +876,22 @@ SELECT Id, Name, [Phone Number], CurrentRoomNumber, BalanceDue FROM Customer WHE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Id, Name, [Phone Number], CurrentRoomNumber, BalanceDue FROM dbo.Customer";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT Id, Name, [Phone Number], CurrentRoomNumber, BalanceDue FROM dbo.Customer\r" +
+                "\nWHERE Name LIKE @paramName";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@paramName", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT Id, Name, [Phone Number], CurrentRoomNumber, BalanceDue FROM dbo.Customer " +
+                "\r\nWHERE BalanceDue >0";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -902,6 +913,34 @@ SELECT Id, Name, [Phone Number], CurrentRoomNumber, BalanceDue FROM Customer WHE
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual CustomerDataSet.CustomerDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            CustomerDataSet.CustomerDataTable dataTable = new CustomerDataSet.CustomerDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual CustomerDataSet.CustomerDataTable GetCustomerByName(string paramName) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((paramName == null)) {
+                throw new global::System.ArgumentNullException("paramName");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(paramName));
+            }
+            CustomerDataSet.CustomerDataTable dataTable = new CustomerDataSet.CustomerDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual CustomerDataSet.CustomerDataTable GetWithOutstandingBalance() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             CustomerDataSet.CustomerDataTable dataTable = new CustomerDataSet.CustomerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

@@ -57,15 +57,16 @@
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblCustomerBalance = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblBalance = new System.Windows.Forms.Label();
             this.lblCustomerRoom = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblCustomerPhoneNumber = new System.Windows.Forms.Label();
-            this.lblCustomerName = new System.Windows.Forms.Label();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblCustomerID = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstCustomers = new System.Windows.Forms.ListBox();
@@ -161,7 +162,7 @@
             this.panelRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRoom.Location = new System.Drawing.Point(3, 3);
             this.panelRoom.Name = "panelRoom";
-            this.panelRoom.Size = new System.Drawing.Size(505, 408);
+            this.panelRoom.Size = new System.Drawing.Size(516, 408);
             this.panelRoom.TabIndex = 3;
             // 
             // groupBox1
@@ -259,7 +260,7 @@
             this.tabRoom.Location = new System.Drawing.Point(4, 22);
             this.tabRoom.Name = "tabRoom";
             this.tabRoom.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRoom.Size = new System.Drawing.Size(511, 414);
+            this.tabRoom.Size = new System.Drawing.Size(522, 414);
             this.tabRoom.TabIndex = 1;
             this.tabRoom.Text = "Room Management";
             // 
@@ -270,7 +271,7 @@
             this.tabEmployee.Location = new System.Drawing.Point(4, 22);
             this.tabEmployee.Name = "tabEmployee";
             this.tabEmployee.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEmployee.Size = new System.Drawing.Size(511, 414);
+            this.tabEmployee.Size = new System.Drawing.Size(522, 414);
             this.tabEmployee.TabIndex = 2;
             this.tabEmployee.Text = "Employee Management";
             // 
@@ -280,7 +281,7 @@
             this.panelEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEmployee.Location = new System.Drawing.Point(3, 3);
             this.panelEmployee.Name = "panelEmployee";
-            this.panelEmployee.Size = new System.Drawing.Size(505, 408);
+            this.panelEmployee.Size = new System.Drawing.Size(516, 408);
             this.panelEmployee.TabIndex = 0;
             // 
             // tabMain
@@ -359,15 +360,16 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.lblCustomerBalance);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.lblBalance);
             this.groupBox3.Controls.Add(this.lblCustomerRoom);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.lblCustomerPhoneNumber);
-            this.groupBox3.Controls.Add(this.lblCustomerName);
+            this.groupBox3.Controls.Add(this.lblPhoneNumber);
+            this.groupBox3.Controls.Add(this.lblName);
             this.groupBox3.Controls.Add(this.lblCustomerID);
             this.groupBox3.Location = new System.Drawing.Point(207, 44);
             this.groupBox3.Name = "groupBox3";
@@ -376,13 +378,21 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Customer Details";
             // 
-            // lblCustomerBalance
+            // label2
             // 
-            this.lblCustomerBalance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCustomerBalance.Location = new System.Drawing.Point(106, 157);
-            this.lblCustomerBalance.Name = "lblCustomerBalance";
-            this.lblCustomerBalance.Size = new System.Drawing.Size(100, 23);
-            this.lblCustomerBalance.TabIndex = 9;
+            this.label2.Location = new System.Drawing.Point(24, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Name:";
+            // 
+            // lblBalance
+            // 
+            this.lblBalance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblBalance.Location = new System.Drawing.Point(106, 157);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(100, 23);
+            this.lblBalance.TabIndex = 9;
             // 
             // lblCustomerRoom
             // 
@@ -437,21 +447,21 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "ID:";
             // 
-            // lblCustomerPhoneNumber
+            // lblPhoneNumber
             // 
-            this.lblCustomerPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCustomerPhoneNumber.Location = new System.Drawing.Point(106, 85);
-            this.lblCustomerPhoneNumber.Name = "lblCustomerPhoneNumber";
-            this.lblCustomerPhoneNumber.Size = new System.Drawing.Size(100, 23);
-            this.lblCustomerPhoneNumber.TabIndex = 2;
+            this.lblPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(106, 85);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(100, 23);
+            this.lblPhoneNumber.TabIndex = 2;
             // 
-            // lblCustomerName
+            // lblName
             // 
-            this.lblCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCustomerName.Location = new System.Drawing.Point(106, 55);
-            this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(100, 23);
-            this.lblCustomerName.TabIndex = 1;
+            this.lblName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblName.Location = new System.Drawing.Point(106, 55);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(100, 23);
+            this.lblName.TabIndex = 1;
             // 
             // lblCustomerID
             // 
@@ -486,7 +496,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 450);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(530, 22);
-            this.statusStrip1.TabIndex = 6;
+            this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // lblStatus
@@ -561,12 +571,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblCustomerPhoneNumber;
-        private System.Windows.Forms.Label lblCustomerName;
+        private System.Windows.Forms.Label lblPhoneNumber;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblCustomerID;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListBox lstCustomers;
-        private System.Windows.Forms.Label lblCustomerBalance;
+        private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblCustomerRoom;
         private System.Windows.Forms.TextBox txtFilter;
         private System.Windows.Forms.Label label1;
@@ -574,6 +584,7 @@
         private System.Windows.Forms.RadioButton radAll;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
+        private System.Windows.Forms.Label label2;
     }
 }
 

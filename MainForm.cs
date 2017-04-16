@@ -35,7 +35,7 @@ public partial class MainForm : Form
             loginModelController = new LoginModelController(this);
             employeeController = new EmployeeViewController();
             employeeModelController = new EmployeeModelController();
-            roomController = new RoomViewController();
+            roomController = new RoomViewController(this);
             roomModelController = new RoomModelController(this);
             customerController = new CustomerViewController(this);
             customerModelController = new CustomerModelController(this);
@@ -68,5 +68,7 @@ public partial class MainForm : Form
                 customerController.onLogout();
             }
         }
+
+       
     }
 }
