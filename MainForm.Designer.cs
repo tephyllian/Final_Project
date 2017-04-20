@@ -38,13 +38,6 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.panelRoom = new System.Windows.Forms.Panel();
-            this.roomDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.roomDataSet = new Final_Project.RoomDataSet();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
@@ -92,22 +85,28 @@
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.roomTableAdapter = new Final_Project.RoomDataSetTableAdapters.RoomTableAdapter();
             this.tableAdapterManager = new Final_Project.RoomDataSetTableAdapters.TableAdapterManager();
-            this.roomBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomDataGridView = new System.Windows.Forms.DataGridView();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.roomBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.roomBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.panelLogin.SuspendLayout();
             this.panelRoom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
@@ -123,6 +122,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingNavigator)).BeginInit();
             this.roomBindingNavigator.SuspendLayout();
             this.SuspendLayout();
@@ -204,59 +204,6 @@
             this.panelRoom.Name = "panelRoom";
             this.panelRoom.Size = new System.Drawing.Size(516, 408);
             this.panelRoom.TabIndex = 3;
-            // 
-            // roomDataGridView
-            // 
-            this.roomDataGridView.AutoGenerateColumns = false;
-            this.roomDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.roomDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.roomDataGridView.DataSource = this.roomBindingSource;
-            this.roomDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.roomDataGridView.Name = "roomDataGridView";
-            this.roomDataGridView.Size = new System.Drawing.Size(508, 374);
-            this.roomDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "RoomNumber";
-            this.dataGridViewTextBoxColumn1.HeaderText = "RoomNumber";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Reserved";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Reserved";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Available";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Available";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "DateReserved";
-            this.dataGridViewTextBoxColumn4.HeaderText = "DateReserved";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ReservedUntil";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ReservedUntil";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "ReservedByCustomer";
-            this.dataGridViewTextBoxColumn6.HeaderText = "ReservedByCustomer";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // roomBindingSource
             // 
@@ -358,7 +305,7 @@
             this.groupBox1.Size = new System.Drawing.Size(289, 269);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Employee Details";
             // 
             // lblEmail
             // 
@@ -693,60 +640,58 @@
             this.tableAdapterManager.RoomTableAdapter = this.roomTableAdapter;
             this.tableAdapterManager.UpdateOrder = Final_Project.RoomDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // roomBindingNavigator
+            // dataGridViewTextBoxColumn6
             // 
-            this.roomBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.roomBindingNavigator.BindingSource = this.roomBindingSource;
-            this.roomBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.roomBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.roomBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.roomBindingNavigatorSaveItem});
-            this.roomBindingNavigator.Location = new System.Drawing.Point(0, 440);
-            this.roomBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.roomBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.roomBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.roomBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.roomBindingNavigator.Name = "roomBindingNavigator";
-            this.roomBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.roomBindingNavigator.Size = new System.Drawing.Size(530, 25);
-            this.roomBindingNavigator.TabIndex = 6;
-            this.roomBindingNavigator.Text = "bindingNavigator1";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "ReservedByCustomer";
+            this.dataGridViewTextBoxColumn6.HeaderText = "ReservedByCustomer";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // bindingNavigatorAddNewItem
+            // dataGridViewTextBoxColumn5
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ReservedUntil";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ReservedUntil";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
-            // bindingNavigatorCountItem
+            // dataGridViewTextBoxColumn4
             // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "DateReserved";
+            this.dataGridViewTextBoxColumn4.HeaderText = "DateReserved";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // bindingNavigatorDeleteItem
+            // dataGridViewTextBoxColumn3
             // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Available";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Available";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Reserved";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Reserved";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "RoomNumber";
+            this.dataGridViewTextBoxColumn1.HeaderText = "RoomNumber";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // roomDataGridView
+            // 
+            this.roomDataGridView.AutoGenerateColumns = false;
+            this.roomDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.roomDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.roomDataGridView.DataSource = this.roomBindingSource;
+            this.roomDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.roomDataGridView.Name = "roomDataGridView";
+            this.roomDataGridView.Size = new System.Drawing.Size(508, 374);
+            this.roomDataGridView.TabIndex = 0;
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -780,6 +725,13 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
@@ -808,6 +760,24 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // roomBindingNavigatorSaveItem
             // 
             this.roomBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -816,6 +786,36 @@
             this.roomBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.roomBindingNavigatorSaveItem.Text = "Save Data";
             this.roomBindingNavigatorSaveItem.Click += new System.EventHandler(this.roomBindingNavigatorSaveItem_Click);
+            // 
+            // roomBindingNavigator
+            // 
+            this.roomBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.roomBindingNavigator.BindingSource = this.roomBindingSource;
+            this.roomBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.roomBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.roomBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.roomBindingNavigatorSaveItem});
+            this.roomBindingNavigator.Location = new System.Drawing.Point(0, 440);
+            this.roomBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.roomBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.roomBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.roomBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.roomBindingNavigator.Name = "roomBindingNavigator";
+            this.roomBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.roomBindingNavigator.Size = new System.Drawing.Size(530, 25);
+            this.roomBindingNavigator.TabIndex = 6;
+            this.roomBindingNavigator.Text = "bindingNavigator1";
             // 
             // MainForm
             // 
@@ -834,7 +834,6 @@
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             this.panelRoom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
@@ -855,6 +854,7 @@
             this.groupBox2.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingNavigator)).EndInit();
             this.roomBindingNavigator.ResumeLayout(false);
             this.roomBindingNavigator.PerformLayout();
@@ -902,21 +902,8 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingNavigator roomBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.BindingSource roomBindingSource;
         private RoomDataSet roomDataSet;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton roomBindingNavigatorSaveItem;
         private RoomDataSetTableAdapters.RoomTableAdapter roomTableAdapter;
         private RoomDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Button btnManageEmployees;
@@ -939,6 +926,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.BindingNavigator roomBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton roomBindingNavigatorSaveItem;
     }
 }
 
