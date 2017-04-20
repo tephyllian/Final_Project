@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace Final_Project
+namespace Final_Project.ViewControllers
 {
-  class LoginViewController: ViewController
+ public class LoginViewController: ViewController
     {
   //private MainForm mainForm;
     public LoginViewController(MainForm mainForm)

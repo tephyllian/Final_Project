@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Final_Project.ViewController;
+using Final_Project.ViewControllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +33,10 @@ public partial class MainForm : Form
     }
     private void Main_Load(object sender, EventArgs e)
     {
+            // TODO: This line of code loads data into the 'roomDataSet.Room' table. You can move, or remove it, as needed.
+            this.roomTableAdapter.Fill(this.roomDataSet.Room);
+            // TODO: This line of code loads data into the 'roomDataSet.Room' table. You can move, or remove it, as needed.
+            this.roomTableAdapter.Fill(this.roomDataSet.Room);
             loginController = new LoginViewController(this);
             loginModelController = new LoginModelController(this);
             employeeController = new EmployeeViewController();
@@ -69,6 +75,32 @@ public partial class MainForm : Form
             }
         }
 
-       
+        private void roomBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.roomBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.roomDataSet);
+
+        }
+
+        private void btnManageEmployees_Click(object sender, EventArgs e)
+        {
+            employeeController.showEmployeeManagerDialog();
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
+        }
+
+        private void btnManagerCustomers_Click(object sender, EventArgs e)
+        {
+            customerController.showCustomerManagerDialog();
+
+        }
     }
 }

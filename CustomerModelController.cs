@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Final_Project.CustomerDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace Final_Project
    public  class CustomerModelController: ModelController
     {
         private CustomerTableAdapter customerTableAdapter;
+
         public CustomerModelController(MainForm mainForm)
         {
             this.mainForm = mainForm;
@@ -39,7 +41,7 @@ namespace Final_Project
 
         public CustomerDataSet.CustomerRow getCustomerByName(String name)
         {
-            CustomerDataSet.CustomerDataTable table = customerTableAdapter.GetCustomerByName();
+            CustomerDataSet.CustomerDataTable table = customerTableAdapter.GetCustomerByName(name);
             if(table.Rows.Count == 1)
             {
                 return table[0];

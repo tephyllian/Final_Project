@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Final_Project
 {
@@ -22,10 +23,10 @@ namespace Final_Project
 
         public Boolean login(String username, String password)
         {
-            LoginsDataSet.LoginsDataTable result = loginTableAdapter.GetData();
-            if(result.Count == 1)
+            LoginsDataSet.LoginsDataTable results = loginTableAdapter.GetData();
+            if(results.Count == 1)
             {
-            if(results.Count[0].Username == username && results[0].Password == password)
+            if(results[0].Username == username && results[0].Password == password)
                
                 {
                     currentUsername = username;
@@ -56,5 +57,7 @@ namespace Final_Project
         {
             return loggedIn;
         }
+
+       
     }
 }
