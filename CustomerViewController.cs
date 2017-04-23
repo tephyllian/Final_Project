@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Final_Project.ViewController { 
+namespace Final_Project.ViewController 
 {
-   public class CustomerViewController {
+   public class CustomerViewController:ViewController {
        // private object mainForm;
 
         public CustomerViewController(MainForm mainForm)

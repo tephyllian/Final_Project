@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Final_Project.StaffDataSetTableAdapters;
-namespace Final_Project.ModelControllers
+namespace Final_Project
 {
    public class EmployeeModelController: ModelController
     {
         private StaffTableAdapter staffTableAdapter = null;
+
         public EmployeeModelController(MainForm mainForm)
         {
             this.mainForm = mainForm;
@@ -23,6 +24,7 @@ namespace Final_Project.ModelControllers
             {
                 names.Add(row.Name);
             }
+            return names;
         }
 
         public StaffDataSet.StaffRow getEmployeessByNames(String name)

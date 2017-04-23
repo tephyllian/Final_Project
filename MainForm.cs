@@ -39,8 +39,8 @@ public partial class MainForm : Form
             this.roomTableAdapter.Fill(this.roomDataSet.Room);
             loginController = new LoginViewController(this);
             loginModelController = new LoginModelController(this);
-            employeeController = new EmployeeViewController();
-            employeeModelController = new EmployeeModelController();
+            employeeController = new EmployeeViewController(this);
+            employeeModelController = new EmployeeModelController(this);
             roomController = new RoomViewController(this);
             roomModelController = new RoomModelController(this);
             customerController = new CustomerViewController(this);
