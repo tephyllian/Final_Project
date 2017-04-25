@@ -38,6 +38,13 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.panelRoom = new System.Windows.Forms.Panel();
+            this.roomDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.roomDataSet = new Final_Project.RoomDataSet();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
@@ -85,13 +92,6 @@
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.roomTableAdapter = new Final_Project.RoomDataSetTableAdapters.RoomTableAdapter();
             this.tableAdapterManager = new Final_Project.RoomDataSetTableAdapters.TableAdapterManager();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomDataGridView = new System.Windows.Forms.DataGridView();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -107,6 +107,7 @@
             this.roomBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.panelLogin.SuspendLayout();
             this.panelRoom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
@@ -122,7 +123,6 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingNavigator)).BeginInit();
             this.roomBindingNavigator.SuspendLayout();
             this.SuspendLayout();
@@ -198,12 +198,66 @@
             // 
             this.panelRoom.AutoScroll = true;
             this.panelRoom.BackColor = System.Drawing.SystemColors.Control;
+            this.panelRoom.Controls.Add(this.roomBindingNavigator);
             this.panelRoom.Controls.Add(this.roomDataGridView);
             this.panelRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRoom.Location = new System.Drawing.Point(3, 3);
             this.panelRoom.Name = "panelRoom";
             this.panelRoom.Size = new System.Drawing.Size(516, 408);
             this.panelRoom.TabIndex = 3;
+            // 
+            // roomDataGridView
+            // 
+            this.roomDataGridView.AutoGenerateColumns = false;
+            this.roomDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.roomDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.roomDataGridView.DataSource = this.roomBindingSource;
+            this.roomDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.roomDataGridView.Name = "roomDataGridView";
+            this.roomDataGridView.Size = new System.Drawing.Size(508, 374);
+            this.roomDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "RoomNumber";
+            this.dataGridViewTextBoxColumn1.HeaderText = "RoomNumber";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Reserved";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Reserved";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Available";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Available";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "DateReserved";
+            this.dataGridViewTextBoxColumn4.HeaderText = "DateReserved";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ReservedUntil";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ReservedUntil";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "ReservedByCustomer";
+            this.dataGridViewTextBoxColumn6.HeaderText = "ReservedByCustomer";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // roomBindingSource
             // 
@@ -640,59 +694,6 @@
             this.tableAdapterManager.RoomTableAdapter = this.roomTableAdapter;
             this.tableAdapterManager.UpdateOrder = Final_Project.RoomDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "ReservedByCustomer";
-            this.dataGridViewTextBoxColumn6.HeaderText = "ReservedByCustomer";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ReservedUntil";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ReservedUntil";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "DateReserved";
-            this.dataGridViewTextBoxColumn4.HeaderText = "DateReserved";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Available";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Available";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Reserved";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Reserved";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "RoomNumber";
-            this.dataGridViewTextBoxColumn1.HeaderText = "RoomNumber";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // roomDataGridView
-            // 
-            this.roomDataGridView.AutoGenerateColumns = false;
-            this.roomDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.roomDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.roomDataGridView.DataSource = this.roomBindingSource;
-            this.roomDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.roomDataGridView.Name = "roomDataGridView";
-            this.roomDataGridView.Size = new System.Drawing.Size(508, 374);
-            this.roomDataGridView.TabIndex = 0;
-            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -793,6 +794,7 @@
             this.roomBindingNavigator.BindingSource = this.roomBindingSource;
             this.roomBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.roomBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.roomBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
             this.roomBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -806,14 +808,14 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.roomBindingNavigatorSaveItem});
-            this.roomBindingNavigator.Location = new System.Drawing.Point(0, 440);
+            this.roomBindingNavigator.Location = new System.Drawing.Point(3, 383);
             this.roomBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.roomBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.roomBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.roomBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.roomBindingNavigator.Name = "roomBindingNavigator";
             this.roomBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.roomBindingNavigator.Size = new System.Drawing.Size(530, 25);
+            this.roomBindingNavigator.Size = new System.Drawing.Size(278, 25);
             this.roomBindingNavigator.TabIndex = 6;
             this.roomBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -822,7 +824,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(530, 472);
-            this.Controls.Add(this.roomBindingNavigator);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -834,6 +835,8 @@
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             this.panelRoom.ResumeLayout(false);
+            this.panelRoom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
@@ -854,7 +857,6 @@
             this.groupBox2.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingNavigator)).EndInit();
             this.roomBindingNavigator.ResumeLayout(false);
             this.roomBindingNavigator.PerformLayout();

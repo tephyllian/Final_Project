@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Final_Project.ViewController 
+namespace Final_Project.ViewController
 {
-   public class CustomerViewController:ViewController {
-       // private object mainForm;
+    public class CustomerViewController : ViewController
+    {
+        // private object mainForm;
 
         public CustomerViewController(MainForm mainForm)
         {
@@ -92,30 +93,30 @@ namespace Final_Project.ViewController
             {
                 customerNames = modelController.getCustomerWithBalance(mainForm.txtFilter);
             }
-            foreach(String customerName in customerNames)
+            foreach (String customerName in customerNames)
             {
                 mainForm.lstCustomers.Items.Add(customerNames);
             }
-            }
+        }
 
         public void loadCustomerInformation(String name)
         {
             CustomerModelController modelController = (CustomerModelController)mainForm.getModelController(this.GetType());
             CustomerDataSet.CustomerRow row = modelController.getCustomerByName(name);
-            if(row != null)
+            if (row != null)
             {
                 mainForm.lblCustomerID.Text = row.Id.ToString();
                 mainForm.lblCustomerName.Text = row.Name;
                 mainForm.lblPhoneNumber.Text = row.Phone_Number;
                 mainForm.lblCustomerRoom.Text = row.CurrentRoomNumber;
                 mainForm.lblBalance.Text = formatCurrency(row.BalanceDue);
-                
+
             }
         }
 
         public void showCustomerManagerDialog()
         {
-            if(Application.OpenForms["CustomerManagerDialog"] != null)
+            if (Application.OpenForms["CustomerManagerDialog"] != null)
             {
                 ((CustomerManagerDialog)Application.OpenForms["CustomerManagerDialog"].BringToFront();
             }
@@ -125,7 +126,6 @@ namespace Final_Project.ViewController
                 managerDialog.Show();
             }
         }
-        }
+    }
 
-        }
-    
+}

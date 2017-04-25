@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Final_Project.ViewController
 {
-    public class RoomViewController
+    public class RoomViewController : ViewController
     {
       
       // private MainForm mainForm;
