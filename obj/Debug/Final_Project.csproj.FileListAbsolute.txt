@@ -1,4 +1,14 @@
-C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.csprojResolveAssemblyReference.cache
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.MainForm.resources
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.Properties.Resources.resources
 C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.csproj.GenerateResource.Cache
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\bin\Debug\Final_Project.exe.config
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\bin\Debug\Hotel.mdf
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\bin\Debug\Hotel_log.ldf
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\bin\Debug\Final_Project.exe
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\bin\Debug\Final_Project.pdb
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.csprojResolveAssemblyReference.cache
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.Dialogs.CheckInDialog.resources
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.Dialogs.CustomerManagerDialog.resources
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.Dialogs.EmployeeManagerDialog.resources
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.exe
+C:\data\Users\eric\Documents\Visual Studio 2015\Projects\Final_Project\Final_Project\obj\Debug\Final_Project.pdb

@@ -1,6 +1,6 @@
-﻿namespace Final_Project.ViewController
+﻿namespace Final_Project
 {
-    internal class mainForm
+    internal class mainForm1
     {
     }
 }

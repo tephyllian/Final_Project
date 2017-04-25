@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Final_Project
 {
-    public class ModelController
+    public abstract class ModelController
     {
         protected MainForm mainForm;
     }

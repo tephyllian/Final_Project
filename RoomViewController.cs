@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Final_Project.ViewController
+namespace Final_Project
 {
     public class RoomViewController : ViewController
     {
-      
-      // private MainForm mainForm;
-      public RoomViewController(MainForm mainForm);
+
+        // private MainForm mainForm;
+        public RoomViewController(MainForm mainForm);
         this.mainForm = mainForm;
         mainForm.roomTable.DataError += RoomsTable_DataError;
         mainForm.roomSaveToolStripButton.Click += RoomSaveToolStripButton_Click;
@@ -36,8 +36,8 @@ namespace Final_Project.ViewController
 
             MessageBox.Show("Unexpected error:" + saveException.Message, "Error", MessageBoxButton.OK, MessageBoxIcon.Error);
         }
-        }
     }
+
 
     public override void onLogin(String username)
     {
@@ -50,7 +50,7 @@ namespace Final_Project.ViewController
     public override void onLogout()
     {
         mainForm.panelRooms.Enabled = false;
-        MainForm.roomsTable.Hide();
+        mainForm.roomsTable.Hide();
     }
 
     public override void resetView()

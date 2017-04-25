@@ -1,7 +1,5 @@
-﻿namespace Final_Project
-{
-    partial class MainForm
-    {
+﻿namespace Final_Project {
+    partial class MainForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -11,10 +9,8 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -26,73 +22,65 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.panelLogin = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.panelRoom = new System.Windows.Forms.Panel();
-            this.roomDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.roomDataSet = new Final_Project.RoomDataSet();
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabLogin = new System.Windows.Forms.TabPage();
-            this.lblHotelMS = new System.Windows.Forms.Label();
-            this.tabRoom = new System.Windows.Forms.TabPage();
-            this.tabEmployee = new System.Windows.Forms.TabPage();
-            this.panelEmployee = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblPhoneNumber = new System.Windows.Forms.Label();
-            this.lblPosition = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnManageEmployees = new System.Windows.Forms.Button();
-            this.lstEmployees = new System.Windows.Forms.ListBox();
-            this.tabMain = new System.Windows.Forms.TabPage();
-            this.panelCustomer = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radBalance = new System.Windows.Forms.RadioButton();
-            this.radAll = new System.Windows.Forms.RadioButton();
-            this.txtFilter = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panelLogin = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblBalance = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabRooms = new System.Windows.Forms.TabPage();
+            this.panelRooms = new System.Windows.Forms.Panel();
+            this.tabEmployees = new System.Windows.Forms.TabPage();
+            this.panelEmployees = new System.Windows.Forms.Panel();
+            this.btnManageEmployees = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblEmployeeStatus = new System.Windows.Forms.Label();
+            this.lblEmployeeDateHired = new System.Windows.Forms.Label();
+            this.lblEmployeeTelephone = new System.Windows.Forms.Label();
+            this.lblEmployeePosition = new System.Windows.Forms.Label();
+            this.lblEmployeeName = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lblEmployeeID = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lstEmpoloyees = new System.Windows.Forms.ListBox();
+            this.tabCustomers = new System.Windows.Forms.TabPage();
+            this.panelCustomers = new System.Windows.Forms.Panel();
+            this.btnManageCustomers = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtCustomerFilter = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.radDisplayOutstandingBalance = new System.Windows.Forms.RadioButton();
+            this.radDisplayAllCustomers = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutCustomerDetails = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCustomerBalance = new System.Windows.Forms.Label();
             this.lblCustomerRoom = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblCustomerPhoneNumber = new System.Windows.Forms.Label();
+            this.lblCustomerTelephone = new System.Windows.Forms.Label();
             this.lblCustomerName = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.lblCustomerID = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstCustomers = new System.Windows.Forms.ListBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.roomTableAdapter = new Final_Project.RoomDataSetTableAdapters.RoomTableAdapter();
-            this.tableAdapterManager = new Final_Project.RoomDataSetTableAdapters.TableAdapterManager();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.lblLoginStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.roomsTable = new System.Windows.Forms.DataGridView();
+            this.roomsNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
@@ -103,605 +91,750 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.roomBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.roomBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.panelLogin.SuspendLayout();
-            this.panelRoom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.roomSaveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.hotelDataSet = new Final_Project.HotelDataSet();
+            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.roomsTableAdapter = new Final_Project.HotelDataSetTableAdapters.RoomsTableAdapter();
+            this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateReservedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservedUntilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservedByCustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlMain.SuspendLayout();
             this.tabLogin.SuspendLayout();
-            this.tabRoom.SuspendLayout();
-            this.tabEmployee.SuspendLayout();
-            this.panelEmployee.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.tabMain.SuspendLayout();
-            this.panelCustomer.SuspendLayout();
+            this.panelLogin.SuspendLayout();
+            this.tabRooms.SuspendLayout();
+            this.panelRooms.SuspendLayout();
+            this.tabEmployees.SuspendLayout();
+            this.panelEmployees.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tabCustomers.SuspendLayout();
+            this.panelCustomers.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.tableLayoutCustomerDetails.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomBindingNavigator)).BeginInit();
-            this.roomBindingNavigator.SuspendLayout();
+            this.mainStatusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsNavigator)).BeginInit();
+            this.roomsNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tabControlMain
+            // 
+            this.tabControlMain.Controls.Add(this.tabLogin);
+            this.tabControlMain.Controls.Add(this.tabRooms);
+            this.tabControlMain.Controls.Add(this.tabEmployees);
+            this.tabControlMain.Controls.Add(this.tabCustomers);
+            this.tabControlMain.Location = new System.Drawing.Point(6, 6);
+            this.tabControlMain.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControlMain.Name = "tabControlMain";
+            this.tabControlMain.SelectedIndex = 0;
+            this.tabControlMain.Size = new System.Drawing.Size(579, 396);
+            this.tabControlMain.TabIndex = 0;
+            // 
+            // tabLogin
+            // 
+            this.tabLogin.BackColor = System.Drawing.SystemColors.Control;
+            this.tabLogin.Controls.Add(this.label3);
+            this.tabLogin.Controls.Add(this.panelLogin);
+            this.tabLogin.Location = new System.Drawing.Point(4, 22);
+            this.tabLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.tabLogin.Name = "tabLogin";
+            this.tabLogin.Padding = new System.Windows.Forms.Padding(2);
+            this.tabLogin.Size = new System.Drawing.Size(571, 370);
+            this.tabLogin.TabIndex = 0;
+            this.tabLogin.Text = "Login";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(107, 260);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(355, 29);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Hotel Management Software 1.0";
             // 
             // panelLogin
             // 
-            this.panelLogin.BackColor = System.Drawing.Color.Transparent;
             this.panelLogin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelLogin.Controls.Add(this.btnLogout);
-            this.panelLogin.Controls.Add(this.txtPassword);
-            this.panelLogin.Controls.Add(this.txtUsername);
             this.panelLogin.Controls.Add(this.btnLogin);
-            this.panelLogin.Controls.Add(this.lblPassword);
-            this.panelLogin.Controls.Add(this.lblUserName);
-            this.panelLogin.Location = new System.Drawing.Point(38, 19);
+            this.panelLogin.Controls.Add(this.txtPassword);
+            this.panelLogin.Controls.Add(this.label2);
+            this.panelLogin.Controls.Add(this.txtUsername);
+            this.panelLogin.Controls.Add(this.label1);
+            this.panelLogin.Location = new System.Drawing.Point(102, 36);
+            this.panelLogin.Margin = new System.Windows.Forms.Padding(2);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(307, 185);
-            this.panelLogin.TabIndex = 2;
+            this.panelLogin.Size = new System.Drawing.Size(368, 154);
+            this.panelLogin.TabIndex = 0;
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(82, 112);
+            this.btnLogout.Enabled = false;
+            this.btnLogout.Location = new System.Drawing.Point(68, 101);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.Size = new System.Drawing.Size(83, 25);
             this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(154, 74);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 20);
-            this.txtPassword.TabIndex = 4;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(154, 31);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(100, 20);
-            this.txtUsername.TabIndex = 3;
-            // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(179, 112);
+            this.btnLogin.Location = new System.Drawing.Point(154, 101);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Size = new System.Drawing.Size(146, 25);
+            this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(79, 74);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(53, 13);
-            this.lblPassword.TabIndex = 1;
-            this.lblPassword.Text = "Password";
-            // 
-            // lblUserName
-            // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(79, 31);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(58, 13);
-            this.lblUserName.TabIndex = 0;
-            this.lblUserName.Text = "Username:";
-            // 
-            // panelRoom
-            // 
-            this.panelRoom.AutoScroll = true;
-            this.panelRoom.BackColor = System.Drawing.SystemColors.Control;
-            this.panelRoom.Controls.Add(this.roomBindingNavigator);
-            this.panelRoom.Controls.Add(this.roomDataGridView);
-            this.panelRoom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRoom.Location = new System.Drawing.Point(3, 3);
-            this.panelRoom.Name = "panelRoom";
-            this.panelRoom.Size = new System.Drawing.Size(516, 408);
-            this.panelRoom.TabIndex = 3;
-            // 
-            // roomDataGridView
-            // 
-            this.roomDataGridView.AutoGenerateColumns = false;
-            this.roomDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.roomDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.roomDataGridView.DataSource = this.roomBindingSource;
-            this.roomDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.roomDataGridView.Name = "roomDataGridView";
-            this.roomDataGridView.Size = new System.Drawing.Size(508, 374);
-            this.roomDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "RoomNumber";
-            this.dataGridViewTextBoxColumn1.HeaderText = "RoomNumber";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Reserved";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Reserved";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Available";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Available";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "DateReserved";
-            this.dataGridViewTextBoxColumn4.HeaderText = "DateReserved";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ReservedUntil";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ReservedUntil";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "ReservedByCustomer";
-            this.dataGridViewTextBoxColumn6.HeaderText = "ReservedByCustomer";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // roomBindingSource
-            // 
-            this.roomBindingSource.DataMember = "Room";
-            this.roomBindingSource.DataSource = this.roomDataSet;
-            // 
-            // roomDataSet
-            // 
-            this.roomDataSet.DataSetName = "RoomDataSet";
-            this.roomDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // errorProvider
-            // 
-            this.errorProvider.ContainerControl = this;
-            // 
-            // tabControlMain
-            // 
-            this.tabControlMain.Controls.Add(this.tabLogin);
-            this.tabControlMain.Controls.Add(this.tabRoom);
-            this.tabControlMain.Controls.Add(this.tabEmployee);
-            this.tabControlMain.Controls.Add(this.tabMain);
-            this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabControlMain.Location = new System.Drawing.Point(0, 0);
-            this.tabControlMain.Name = "tabControlMain";
-            this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(530, 440);
-            this.tabControlMain.TabIndex = 5;
-            // 
-            // tabLogin
-            // 
-            this.tabLogin.BackColor = System.Drawing.SystemColors.Control;
-            this.tabLogin.Controls.Add(this.lblHotelMS);
-            this.tabLogin.Controls.Add(this.panelLogin);
-            this.tabLogin.Location = new System.Drawing.Point(4, 22);
-            this.tabLogin.Name = "tabLogin";
-            this.tabLogin.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLogin.Size = new System.Drawing.Size(522, 414);
-            this.tabLogin.TabIndex = 0;
-            this.tabLogin.Text = "Login";
-            // 
-            // lblHotelMS
-            // 
-            this.lblHotelMS.AutoSize = true;
-            this.lblHotelMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHotelMS.Location = new System.Drawing.Point(37, 269);
-            this.lblHotelMS.Name = "lblHotelMS";
-            this.lblHotelMS.Size = new System.Drawing.Size(459, 33);
-            this.lblHotelMS.TabIndex = 3;
-            this.lblHotelMS.Text = "Hotel Management Software 1.0";
-            // 
-            // tabRoom
-            // 
-            this.tabRoom.BackColor = System.Drawing.Color.White;
-            this.tabRoom.Controls.Add(this.panelRoom);
-            this.tabRoom.Location = new System.Drawing.Point(4, 22);
-            this.tabRoom.Name = "tabRoom";
-            this.tabRoom.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRoom.Size = new System.Drawing.Size(522, 414);
-            this.tabRoom.TabIndex = 1;
-            this.tabRoom.Text = "Room Management";
-            // 
-            // tabEmployee
-            // 
-            this.tabEmployee.BackColor = System.Drawing.Color.White;
-            this.tabEmployee.Controls.Add(this.panelEmployee);
-            this.tabEmployee.Location = new System.Drawing.Point(4, 22);
-            this.tabEmployee.Name = "tabEmployee";
-            this.tabEmployee.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEmployee.Size = new System.Drawing.Size(522, 414);
-            this.tabEmployee.TabIndex = 2;
-            this.tabEmployee.Text = "Employee Management";
-            // 
-            // panelEmployee
-            // 
-            this.panelEmployee.BackColor = System.Drawing.SystemColors.Control;
-            this.panelEmployee.Controls.Add(this.groupBox1);
-            this.panelEmployee.Controls.Add(this.btnManageEmployees);
-            this.panelEmployee.Controls.Add(this.lstEmployees);
-            this.panelEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEmployee.Location = new System.Drawing.Point(3, 3);
-            this.panelEmployee.Name = "panelEmployee";
-            this.panelEmployee.Size = new System.Drawing.Size(516, 408);
-            this.panelEmployee.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.lblEmail);
-            this.groupBox1.Controls.Add(this.lblPhoneNumber);
-            this.groupBox1.Controls.Add(this.lblPosition);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.lblName);
-            this.groupBox1.Controls.Add(this.lblID);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(213, 30);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(289, 269);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Employee Details";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblEmail.Location = new System.Drawing.Point(109, 196);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(100, 23);
-            this.lblEmail.TabIndex = 11;
-            // 
-            // lblPhoneNumber
-            // 
-            this.lblPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(109, 157);
-            this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(100, 23);
-            this.lblPhoneNumber.TabIndex = 10;
-            // 
-            // lblPosition
-            // 
-            this.lblPosition.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblPosition.Location = new System.Drawing.Point(109, 116);
-            this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(100, 23);
-            this.lblPosition.TabIndex = 9;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(20, 157);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(81, 13);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Phone Number:";
-            // 
-            // lblName
-            // 
-            this.lblName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblName.Location = new System.Drawing.Point(109, 77);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(100, 23);
-            this.lblName.TabIndex = 7;
-            // 
-            // lblID
-            // 
-            this.lblID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblID.Location = new System.Drawing.Point(109, 44);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(100, 23);
-            this.lblID.TabIndex = 6;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(20, 116);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 13);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Position:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 77);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 13);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Name:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(23, 196);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Email:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 44);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "ID";
-            // 
-            // btnManageEmployees
-            // 
-            this.btnManageEmployees.Location = new System.Drawing.Point(213, 363);
-            this.btnManageEmployees.Name = "btnManageEmployees";
-            this.btnManageEmployees.Size = new System.Drawing.Size(128, 37);
-            this.btnManageEmployees.TabIndex = 1;
-            this.btnManageEmployees.Text = "Add or Edit Employees";
-            this.btnManageEmployees.UseVisualStyleBackColor = true;
-            this.btnManageEmployees.Click += new System.EventHandler(this.btnManageEmployees_Click);
-            // 
-            // lstEmployees
-            // 
-            this.lstEmployees.FormattingEnabled = true;
-            this.lstEmployees.Location = new System.Drawing.Point(18, 30);
-            this.lstEmployees.Name = "lstEmployees";
-            this.lstEmployees.Size = new System.Drawing.Size(183, 329);
-            this.lstEmployees.TabIndex = 0;
-            // 
-            // tabMain
-            // 
-            this.tabMain.BackColor = System.Drawing.Color.White;
-            this.tabMain.Controls.Add(this.panelCustomer);
-            this.tabMain.Location = new System.Drawing.Point(4, 22);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMain.Size = new System.Drawing.Size(522, 414);
-            this.tabMain.TabIndex = 3;
-            this.tabMain.Text = "Customer Management";
-            // 
-            // panelCustomer
-            // 
-            this.panelCustomer.BackColor = System.Drawing.SystemColors.Control;
-            this.panelCustomer.Controls.Add(this.groupBox4);
-            this.panelCustomer.Controls.Add(this.groupBox3);
-            this.panelCustomer.Controls.Add(this.groupBox2);
-            this.panelCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCustomer.Location = new System.Drawing.Point(3, 3);
-            this.panelCustomer.Name = "panelCustomer";
-            this.panelCustomer.Size = new System.Drawing.Size(516, 408);
-            this.panelCustomer.TabIndex = 0;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.radBalance);
-            this.groupBox4.Controls.Add(this.radAll);
-            this.groupBox4.Controls.Add(this.txtFilter);
-            this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Location = new System.Drawing.Point(216, 269);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(275, 126);
-            this.groupBox4.TabIndex = 2;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Display";
-            // 
-            // radBalance
-            // 
-            this.radBalance.AutoSize = true;
-            this.radBalance.Location = new System.Drawing.Point(9, 51);
-            this.radBalance.Name = "radBalance";
-            this.radBalance.Size = new System.Drawing.Size(124, 17);
-            this.radBalance.TabIndex = 3;
-            this.radBalance.TabStop = true;
-            this.radBalance.Text = "Outstanding Balance";
-            this.radBalance.UseVisualStyleBackColor = true;
-            // 
-            // radAll
-            // 
-            this.radAll.AutoSize = true;
-            this.radAll.Location = new System.Drawing.Point(9, 19);
-            this.radAll.Name = "radAll";
-            this.radAll.Size = new System.Drawing.Size(36, 17);
-            this.radAll.TabIndex = 2;
-            this.radAll.TabStop = true;
-            this.radAll.Text = "All";
-            this.radAll.UseVisualStyleBackColor = true;
-            // 
-            // txtFilter
-            // 
-            this.txtFilter.Location = new System.Drawing.Point(9, 100);
-            this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(100, 20);
-            this.txtFilter.TabIndex = 1;
+            // txtPassword
+            // 
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(154, 61);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(148, 26);
+            this.txtPassword.TabIndex = 3;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(64, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Password:";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(154, 29);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(148, 26);
+            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 76);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(64, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Filter:";
+            this.label1.Text = "Username:";
+            // 
+            // tabRooms
+            // 
+            this.tabRooms.Controls.Add(this.panelRooms);
+            this.tabRooms.Location = new System.Drawing.Point(4, 22);
+            this.tabRooms.Margin = new System.Windows.Forms.Padding(2);
+            this.tabRooms.Name = "tabRooms";
+            this.tabRooms.Padding = new System.Windows.Forms.Padding(2);
+            this.tabRooms.Size = new System.Drawing.Size(571, 370);
+            this.tabRooms.TabIndex = 1;
+            this.tabRooms.Text = "Room Management";
+            this.tabRooms.UseVisualStyleBackColor = true;
+            // 
+            // panelRooms
+            // 
+            this.panelRooms.BackColor = System.Drawing.SystemColors.Control;
+            this.panelRooms.Controls.Add(this.roomsNavigator);
+            this.panelRooms.Controls.Add(this.roomsTable);
+            this.panelRooms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelRooms.Enabled = false;
+            this.panelRooms.Location = new System.Drawing.Point(2, 2);
+            this.panelRooms.Margin = new System.Windows.Forms.Padding(2);
+            this.panelRooms.Name = "panelRooms";
+            this.panelRooms.Size = new System.Drawing.Size(567, 366);
+            this.panelRooms.TabIndex = 0;
+            // 
+            // tabEmployees
+            // 
+            this.tabEmployees.Controls.Add(this.panelEmployees);
+            this.tabEmployees.Location = new System.Drawing.Point(4, 22);
+            this.tabEmployees.Margin = new System.Windows.Forms.Padding(2);
+            this.tabEmployees.Name = "tabEmployees";
+            this.tabEmployees.Size = new System.Drawing.Size(571, 370);
+            this.tabEmployees.TabIndex = 2;
+            this.tabEmployees.Text = "Employee Management";
+            this.tabEmployees.UseVisualStyleBackColor = true;
+            // 
+            // panelEmployees
+            // 
+            this.panelEmployees.BackColor = System.Drawing.SystemColors.Control;
+            this.panelEmployees.Controls.Add(this.btnManageEmployees);
+            this.panelEmployees.Controls.Add(this.groupBox5);
+            this.panelEmployees.Controls.Add(this.lstEmpoloyees);
+            this.panelEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEmployees.Enabled = false;
+            this.panelEmployees.Location = new System.Drawing.Point(0, 0);
+            this.panelEmployees.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEmployees.Name = "panelEmployees";
+            this.panelEmployees.Size = new System.Drawing.Size(571, 370);
+            this.panelEmployees.TabIndex = 0;
+            // 
+            // btnManageEmployees
+            // 
+            this.btnManageEmployees.Location = new System.Drawing.Point(171, 320);
+            this.btnManageEmployees.Name = "btnManageEmployees";
+            this.btnManageEmployees.Size = new System.Drawing.Size(156, 39);
+            this.btnManageEmployees.TabIndex = 3;
+            this.btnManageEmployees.Text = "Add or Edit Employees";
+            this.btnManageEmployees.UseVisualStyleBackColor = true;
+            this.btnManageEmployees.Click += new System.EventHandler(this.btnManageEmployees_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.tableLayoutPanel2);
+            this.groupBox5.Location = new System.Drawing.Point(169, 17);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Size = new System.Drawing.Size(395, 170);
+            this.groupBox5.TabIndex = 2;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Employee Details";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.Controls.Add(this.lblEmployeeStatus, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lblEmployeeDateHired, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lblEmployeeTelephone, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lblEmployeePosition, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblEmployeeName, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label15, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label16, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label17, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label18, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lblEmployeeID, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label19, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 5);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 15);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 6;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(391, 153);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // lblEmployeeStatus
+            // 
+            this.lblEmployeeStatus.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEmployeeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeStatus.Location = new System.Drawing.Point(109, 125);
+            this.lblEmployeeStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeStatus.Name = "lblEmployeeStatus";
+            this.lblEmployeeStatus.Size = new System.Drawing.Size(256, 23);
+            this.lblEmployeeStatus.TabIndex = 11;
+            this.lblEmployeeStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEmployeeDateHired
+            // 
+            this.lblEmployeeDateHired.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEmployeeDateHired.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeDateHired.Location = new System.Drawing.Point(109, 100);
+            this.lblEmployeeDateHired.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeDateHired.Name = "lblEmployeeDateHired";
+            this.lblEmployeeDateHired.Size = new System.Drawing.Size(256, 25);
+            this.lblEmployeeDateHired.TabIndex = 9;
+            this.lblEmployeeDateHired.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEmployeeTelephone
+            // 
+            this.lblEmployeeTelephone.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEmployeeTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeTelephone.Location = new System.Drawing.Point(109, 75);
+            this.lblEmployeeTelephone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeTelephone.Name = "lblEmployeeTelephone";
+            this.lblEmployeeTelephone.Size = new System.Drawing.Size(256, 25);
+            this.lblEmployeeTelephone.TabIndex = 8;
+            this.lblEmployeeTelephone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEmployeePosition
+            // 
+            this.lblEmployeePosition.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEmployeePosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeePosition.Location = new System.Drawing.Point(109, 50);
+            this.lblEmployeePosition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeePosition.Name = "lblEmployeePosition";
+            this.lblEmployeePosition.Size = new System.Drawing.Size(256, 25);
+            this.lblEmployeePosition.TabIndex = 7;
+            this.lblEmployeePosition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEmployeeName
+            // 
+            this.lblEmployeeName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeName.Location = new System.Drawing.Point(109, 25);
+            this.lblEmployeeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeName.Name = "lblEmployeeName";
+            this.lblEmployeeName.Size = new System.Drawing.Size(256, 25);
+            this.lblEmployeeName.TabIndex = 6;
+            this.lblEmployeeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(78, 0);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(27, 24);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "ID";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(44, 25);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(61, 24);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Name";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(29, 50);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(76, 24);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Position";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(2, 75);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(103, 24);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "Telephone";
+            // 
+            // lblEmployeeID
+            // 
+            this.lblEmployeeID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEmployeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeID.Location = new System.Drawing.Point(109, 0);
+            this.lblEmployeeID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeID.Name = "lblEmployeeID";
+            this.lblEmployeeID.Size = new System.Drawing.Size(256, 25);
+            this.lblEmployeeID.TabIndex = 5;
+            this.lblEmployeeID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(6, 100);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(99, 24);
+            this.label19.TabIndex = 4;
+            this.label19.Text = "Date Hired";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(45, 127);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 24);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Status";
+            // 
+            // lstEmpoloyees
+            // 
+            this.lstEmpoloyees.FormattingEnabled = true;
+            this.lstEmpoloyees.Location = new System.Drawing.Point(15, 17);
+            this.lstEmpoloyees.Name = "lstEmpoloyees";
+            this.lstEmpoloyees.Size = new System.Drawing.Size(146, 342);
+            this.lstEmpoloyees.TabIndex = 1;
+            // 
+            // tabCustomers
+            // 
+            this.tabCustomers.Controls.Add(this.panelCustomers);
+            this.tabCustomers.Location = new System.Drawing.Point(4, 22);
+            this.tabCustomers.Margin = new System.Windows.Forms.Padding(2);
+            this.tabCustomers.Name = "tabCustomers";
+            this.tabCustomers.Padding = new System.Windows.Forms.Padding(2);
+            this.tabCustomers.Size = new System.Drawing.Size(571, 370);
+            this.tabCustomers.TabIndex = 3;
+            this.tabCustomers.Text = "Customer Management";
+            this.tabCustomers.UseVisualStyleBackColor = true;
+            // 
+            // panelCustomers
+            // 
+            this.panelCustomers.BackColor = System.Drawing.SystemColors.Control;
+            this.panelCustomers.Controls.Add(this.btnManageCustomers);
+            this.panelCustomers.Controls.Add(this.groupBox4);
+            this.panelCustomers.Controls.Add(this.groupBox3);
+            this.panelCustomers.Controls.Add(this.groupBox2);
+            this.panelCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCustomers.Enabled = false;
+            this.panelCustomers.Location = new System.Drawing.Point(2, 2);
+            this.panelCustomers.Margin = new System.Windows.Forms.Padding(2);
+            this.panelCustomers.Name = "panelCustomers";
+            this.panelCustomers.Size = new System.Drawing.Size(567, 366);
+            this.panelCustomers.TabIndex = 0;
+            // 
+            // btnManageCustomers
+            // 
+            this.btnManageCustomers.Location = new System.Drawing.Point(395, 301);
+            this.btnManageCustomers.Name = "btnManageCustomers";
+            this.btnManageCustomers.Size = new System.Drawing.Size(161, 46);
+            this.btnManageCustomers.TabIndex = 3;
+            this.btnManageCustomers.Text = "Add / Edit Customers";
+            this.btnManageCustomers.UseVisualStyleBackColor = true;
+            this.btnManageCustomers.Click += new System.EventHandler(this.btnManageCustomers_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.txtCustomerFilter);
+            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.radDisplayOutstandingBalance);
+            this.groupBox4.Controls.Add(this.radDisplayAllCustomers);
+            this.groupBox4.Location = new System.Drawing.Point(162, 243);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Size = new System.Drawing.Size(134, 110);
+            this.groupBox4.TabIndex = 2;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Display";
+            // 
+            // txtCustomerFilter
+            // 
+            this.txtCustomerFilter.Location = new System.Drawing.Point(8, 84);
+            this.txtCustomerFilter.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCustomerFilter.Name = "txtCustomerFilter";
+            this.txtCustomerFilter.Size = new System.Drawing.Size(121, 20);
+            this.txtCustomerFilter.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 69);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(32, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Filter:";
+            // 
+            // radDisplayOutstandingBalance
+            // 
+            this.radDisplayOutstandingBalance.AutoSize = true;
+            this.radDisplayOutstandingBalance.Location = new System.Drawing.Point(8, 43);
+            this.radDisplayOutstandingBalance.Margin = new System.Windows.Forms.Padding(2);
+            this.radDisplayOutstandingBalance.Name = "radDisplayOutstandingBalance";
+            this.radDisplayOutstandingBalance.Size = new System.Drawing.Size(124, 17);
+            this.radDisplayOutstandingBalance.TabIndex = 1;
+            this.radDisplayOutstandingBalance.TabStop = true;
+            this.radDisplayOutstandingBalance.Text = "Outstanding Balance";
+            this.radDisplayOutstandingBalance.UseVisualStyleBackColor = true;
+            // 
+            // radDisplayAllCustomers
+            // 
+            this.radDisplayAllCustomers.AutoSize = true;
+            this.radDisplayAllCustomers.Checked = true;
+            this.radDisplayAllCustomers.Location = new System.Drawing.Point(8, 24);
+            this.radDisplayAllCustomers.Margin = new System.Windows.Forms.Padding(2);
+            this.radDisplayAllCustomers.Name = "radDisplayAllCustomers";
+            this.radDisplayAllCustomers.Size = new System.Drawing.Size(36, 17);
+            this.radDisplayAllCustomers.TabIndex = 0;
+            this.radDisplayAllCustomers.TabStop = true;
+            this.radDisplayAllCustomers.Text = "All";
+            this.radDisplayAllCustomers.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.lblBalance);
-            this.groupBox3.Controls.Add(this.lblCustomerRoom);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.lblCustomerPhoneNumber);
-            this.groupBox3.Controls.Add(this.lblCustomerName);
-            this.groupBox3.Controls.Add(this.lblCustomerID);
-            this.groupBox3.Location = new System.Drawing.Point(207, 44);
+            this.groupBox3.Controls.Add(this.tableLayoutCustomerDetails);
+            this.groupBox3.Location = new System.Drawing.Point(161, 17);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(293, 209);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(395, 153);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Customer Details";
             // 
-            // label2
+            // tableLayoutCustomerDetails
             // 
-            this.label2.Location = new System.Drawing.Point(24, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Name:";
+            this.tableLayoutCustomerDetails.ColumnCount = 2;
+            this.tableLayoutCustomerDetails.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutCustomerDetails.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutCustomerDetails.Controls.Add(this.lblCustomerBalance, 1, 4);
+            this.tableLayoutCustomerDetails.Controls.Add(this.lblCustomerRoom, 1, 3);
+            this.tableLayoutCustomerDetails.Controls.Add(this.lblCustomerTelephone, 1, 2);
+            this.tableLayoutCustomerDetails.Controls.Add(this.lblCustomerName, 1, 1);
+            this.tableLayoutCustomerDetails.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutCustomerDetails.Controls.Add(this.label5, 0, 1);
+            this.tableLayoutCustomerDetails.Controls.Add(this.label6, 0, 2);
+            this.tableLayoutCustomerDetails.Controls.Add(this.label7, 0, 3);
+            this.tableLayoutCustomerDetails.Controls.Add(this.label8, 0, 4);
+            this.tableLayoutCustomerDetails.Controls.Add(this.lblCustomerID, 1, 0);
+            this.tableLayoutCustomerDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutCustomerDetails.Location = new System.Drawing.Point(2, 15);
+            this.tableLayoutCustomerDetails.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutCustomerDetails.Name = "tableLayoutCustomerDetails";
+            this.tableLayoutCustomerDetails.RowCount = 5;
+            this.tableLayoutCustomerDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutCustomerDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutCustomerDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutCustomerDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutCustomerDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutCustomerDetails.Size = new System.Drawing.Size(391, 136);
+            this.tableLayoutCustomerDetails.TabIndex = 0;
             // 
-            // lblBalance
+            // lblCustomerBalance
             // 
-            this.lblBalance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblBalance.Location = new System.Drawing.Point(106, 157);
-            this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(100, 23);
-            this.lblBalance.TabIndex = 9;
+            this.lblCustomerBalance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCustomerBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerBalance.Location = new System.Drawing.Point(134, 108);
+            this.lblCustomerBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCustomerBalance.Name = "lblCustomerBalance";
+            this.lblCustomerBalance.Size = new System.Drawing.Size(256, 27);
+            this.lblCustomerBalance.TabIndex = 9;
+            this.lblCustomerBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCustomerRoom
             // 
             this.lblCustomerRoom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCustomerRoom.Location = new System.Drawing.Point(106, 119);
+            this.lblCustomerRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerRoom.Location = new System.Drawing.Point(134, 81);
+            this.lblCustomerRoom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerRoom.Name = "lblCustomerRoom";
-            this.lblCustomerRoom.Size = new System.Drawing.Size(100, 23);
+            this.lblCustomerRoom.Size = new System.Drawing.Size(256, 27);
             this.lblCustomerRoom.TabIndex = 8;
+            this.lblCustomerRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // lblCustomerTelephone
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 158);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Balance Due:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 129);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Current Room:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Phone Number:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(47, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Name:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(21, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "ID:";
-            // 
-            // lblCustomerPhoneNumber
-            // 
-            this.lblCustomerPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCustomerPhoneNumber.Location = new System.Drawing.Point(106, 85);
-            this.lblCustomerPhoneNumber.Name = "lblCustomerPhoneNumber";
-            this.lblCustomerPhoneNumber.Size = new System.Drawing.Size(100, 23);
-            this.lblCustomerPhoneNumber.TabIndex = 2;
+            this.lblCustomerTelephone.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCustomerTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerTelephone.Location = new System.Drawing.Point(134, 54);
+            this.lblCustomerTelephone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCustomerTelephone.Name = "lblCustomerTelephone";
+            this.lblCustomerTelephone.Size = new System.Drawing.Size(256, 27);
+            this.lblCustomerTelephone.TabIndex = 7;
+            this.lblCustomerTelephone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCustomerName
             // 
             this.lblCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCustomerName.Location = new System.Drawing.Point(106, 55);
+            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerName.Location = new System.Drawing.Point(134, 27);
+            this.lblCustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(100, 23);
-            this.lblCustomerName.TabIndex = 1;
+            this.lblCustomerName.Size = new System.Drawing.Size(256, 27);
+            this.lblCustomerName.TabIndex = 6;
+            this.lblCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(98, 1);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 24);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "ID:";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(69, 28);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 24);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Name";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(27, 55);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 24);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Telephone";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(2, 82);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 24);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Current Room";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 110);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 24);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Balance Due";
             // 
             // lblCustomerID
             // 
             this.lblCustomerID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCustomerID.Location = new System.Drawing.Point(106, 16);
+            this.lblCustomerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerID.Location = new System.Drawing.Point(134, 0);
+            this.lblCustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerID.Name = "lblCustomerID";
-            this.lblCustomerID.Size = new System.Drawing.Size(100, 23);
-            this.lblCustomerID.TabIndex = 0;
+            this.lblCustomerID.Size = new System.Drawing.Size(256, 27);
+            this.lblCustomerID.TabIndex = 5;
+            this.lblCustomerID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lstCustomers);
-            this.groupBox2.Location = new System.Drawing.Point(14, 35);
+            this.groupBox2.Location = new System.Drawing.Point(14, 11);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(187, 302);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(144, 348);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customers";
             // 
             // lstCustomers
             // 
+            this.lstCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstCustomers.FormattingEnabled = true;
-            this.lstCustomers.Location = new System.Drawing.Point(6, 19);
+            this.lstCustomers.ItemHeight = 16;
+            this.lstCustomers.Location = new System.Drawing.Point(2, 15);
+            this.lstCustomers.Margin = new System.Windows.Forms.Padding(2);
             this.lstCustomers.Name = "lstCustomers";
-            this.lstCustomers.Size = new System.Drawing.Size(175, 277);
+            this.lstCustomers.Size = new System.Drawing.Size(140, 331);
             this.lstCustomers.TabIndex = 0;
             // 
-            // statusStrip1
+            // mainStatusStrip
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblStatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 450);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(530, 22);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
+            this.mainStatusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblLoginStatus});
+            this.mainStatusStrip.Location = new System.Drawing.Point(0, 407);
+            this.mainStatusStrip.Name = "mainStatusStrip";
+            this.mainStatusStrip.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
+            this.mainStatusStrip.Size = new System.Drawing.Size(585, 22);
+            this.mainStatusStrip.TabIndex = 1;
+            this.mainStatusStrip.Text = "statusStrip1";
             // 
-            // lblStatus
+            // lblLoginStatus
             // 
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(0, 17);
+            this.lblLoginStatus.Name = "lblLoginStatus";
+            this.lblLoginStatus.Size = new System.Drawing.Size(83, 17);
+            this.lblLoginStatus.Text = "Not Logged In";
             // 
-            // roomTableAdapter
+            // roomsTable
             // 
-            this.roomTableAdapter.ClearBeforeFill = true;
+            this.roomsTable.AllowUserToDeleteRows = false;
+            this.roomsTable.AutoGenerateColumns = false;
+            this.roomsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.roomsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.roomNumberDataGridViewTextBoxColumn,
+            this.reservedDataGridViewTextBoxColumn,
+            this.availableDataGridViewTextBoxColumn,
+            this.dateReservedDataGridViewTextBoxColumn,
+            this.reservedUntilDataGridViewTextBoxColumn,
+            this.reservedByCustomerDataGridViewTextBoxColumn});
+            this.roomsTable.DataSource = this.roomsBindingSource;
+            this.roomsTable.Location = new System.Drawing.Point(3, 3);
+            this.roomsTable.Name = "roomsTable";
+            this.roomsTable.Size = new System.Drawing.Size(558, 335);
+            this.roomsTable.TabIndex = 0;
             // 
-            // tableAdapterManager
+            // roomsNavigator
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.RoomTableAdapter = this.roomTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Final_Project.RoomDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            this.roomsNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.roomsNavigator.BindingSource = this.roomsBindingSource;
+            this.roomsNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.roomsNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.roomsNavigator.Dock = System.Windows.Forms.DockStyle.None;
+            this.roomsNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.openToolStripButton,
+            this.roomSaveToolStripButton,
+            this.toolStripSeparator1});
+            this.roomsNavigator.Location = new System.Drawing.Point(3, 341);
+            this.roomsNavigator.MoveFirstItem = null;
+            this.roomsNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.roomsNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.roomsNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.roomsNavigator.Name = "roomsNavigator";
+            this.roomsNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.roomsNavigator.Size = new System.Drawing.Size(284, 25);
+            this.roomsNavigator.TabIndex = 1;
+            this.roomsNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMovePreviousItem
             // 
@@ -735,7 +868,7 @@
             // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -758,7 +891,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorAddNewItem
@@ -779,160 +912,187 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
-            // roomBindingNavigatorSaveItem
+            // openToolStripButton
             // 
-            this.roomBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.roomBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("roomBindingNavigatorSaveItem.Image")));
-            this.roomBindingNavigatorSaveItem.Name = "roomBindingNavigatorSaveItem";
-            this.roomBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.roomBindingNavigatorSaveItem.Text = "Save Data";
-            this.roomBindingNavigatorSaveItem.Click += new System.EventHandler(this.roomBindingNavigatorSaveItem_Click);
+            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripButton.Name = "openToolStripButton";
+            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Text = "&Open";
             // 
-            // roomBindingNavigator
+            // roomSaveToolStripButton
             // 
-            this.roomBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.roomBindingNavigator.BindingSource = this.roomBindingSource;
-            this.roomBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.roomBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.roomBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
-            this.roomBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.roomBindingNavigatorSaveItem});
-            this.roomBindingNavigator.Location = new System.Drawing.Point(3, 383);
-            this.roomBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.roomBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.roomBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.roomBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.roomBindingNavigator.Name = "roomBindingNavigator";
-            this.roomBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.roomBindingNavigator.Size = new System.Drawing.Size(278, 25);
-            this.roomBindingNavigator.TabIndex = 6;
-            this.roomBindingNavigator.Text = "bindingNavigator1";
+            this.roomSaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.roomSaveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("roomSaveToolStripButton.Image")));
+            this.roomSaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.roomSaveToolStripButton.Name = "roomSaveToolStripButton";
+            this.roomSaveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.roomSaveToolStripButton.Text = "&Save";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // hotelDataSet
+            // 
+            this.hotelDataSet.DataSetName = "HotelDataSet";
+            this.hotelDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // roomsBindingSource
+            // 
+            this.roomsBindingSource.DataMember = "Rooms";
+            this.roomsBindingSource.DataSource = this.hotelDataSet;
+            // 
+            // roomsTableAdapter
+            // 
+            this.roomsTableAdapter.ClearBeforeFill = true;
+            // 
+            // roomNumberDataGridViewTextBoxColumn
+            // 
+            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
+            // 
+            // reservedDataGridViewTextBoxColumn
+            // 
+            this.reservedDataGridViewTextBoxColumn.DataPropertyName = "Reserved";
+            this.reservedDataGridViewTextBoxColumn.HeaderText = "Reserved";
+            this.reservedDataGridViewTextBoxColumn.Name = "reservedDataGridViewTextBoxColumn";
+            // 
+            // availableDataGridViewTextBoxColumn
+            // 
+            this.availableDataGridViewTextBoxColumn.DataPropertyName = "Available";
+            this.availableDataGridViewTextBoxColumn.HeaderText = "Available";
+            this.availableDataGridViewTextBoxColumn.Name = "availableDataGridViewTextBoxColumn";
+            // 
+            // dateReservedDataGridViewTextBoxColumn
+            // 
+            this.dateReservedDataGridViewTextBoxColumn.DataPropertyName = "DateReserved";
+            this.dateReservedDataGridViewTextBoxColumn.HeaderText = "DateReserved";
+            this.dateReservedDataGridViewTextBoxColumn.Name = "dateReservedDataGridViewTextBoxColumn";
+            // 
+            // reservedUntilDataGridViewTextBoxColumn
+            // 
+            this.reservedUntilDataGridViewTextBoxColumn.DataPropertyName = "ReservedUntil";
+            this.reservedUntilDataGridViewTextBoxColumn.HeaderText = "ReservedUntil";
+            this.reservedUntilDataGridViewTextBoxColumn.Name = "reservedUntilDataGridViewTextBoxColumn";
+            // 
+            // reservedByCustomerDataGridViewTextBoxColumn
+            // 
+            this.reservedByCustomerDataGridViewTextBoxColumn.DataPropertyName = "ReservedByCustomer";
+            this.reservedByCustomerDataGridViewTextBoxColumn.HeaderText = "ReservedByCustomer";
+            this.reservedByCustomerDataGridViewTextBoxColumn.Name = "reservedByCustomerDataGridViewTextBoxColumn";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 472);
-            this.Controls.Add(this.statusStrip1);
+            this.ClientSize = new System.Drawing.Size(585, 429);
+            this.Controls.Add(this.mainStatusStrip);
             this.Controls.Add(this.tabControlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Main Form";
-            this.Load += new System.EventHandler(this.Main_Load);
-            this.panelLogin.ResumeLayout(false);
-            this.panelLogin.PerformLayout();
-            this.panelRoom.ResumeLayout(false);
-            this.panelRoom.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hotel Management Software";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabControlMain.ResumeLayout(false);
             this.tabLogin.ResumeLayout(false);
             this.tabLogin.PerformLayout();
-            this.tabRoom.ResumeLayout(false);
-            this.tabEmployee.ResumeLayout(false);
-            this.panelEmployee.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.tabMain.ResumeLayout(false);
-            this.panelCustomer.ResumeLayout(false);
+            this.panelLogin.ResumeLayout(false);
+            this.panelLogin.PerformLayout();
+            this.tabRooms.ResumeLayout(false);
+            this.panelRooms.ResumeLayout(false);
+            this.panelRooms.PerformLayout();
+            this.tabEmployees.ResumeLayout(false);
+            this.panelEmployees.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tabCustomers.ResumeLayout(false);
+            this.panelCustomers.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.tableLayoutCustomerDetails.ResumeLayout(false);
+            this.tableLayoutCustomerDetails.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomBindingNavigator)).EndInit();
-            this.roomBindingNavigator.ResumeLayout(false);
-            this.roomBindingNavigator.PerformLayout();
+            this.mainStatusStrip.ResumeLayout(false);
+            this.mainStatusStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsNavigator)).EndInit();
+            this.roomsNavigator.ResumeLayout(false);
+            this.roomsNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panelLogin;
-        private System.Windows.Forms.Panel panelRoom;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.ErrorProvider errorProvider;
+
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabLogin;
-        private System.Windows.Forms.TabPage tabRoom;
-        private System.Windows.Forms.TabPage tabEmployee;
-        private System.Windows.Forms.TabPage tabMain;
-        private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Label lblHotelMS;
-        private System.Windows.Forms.Panel panelCustomer;
-        private System.Windows.Forms.Panel panelEmployee;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblCustomerPhoneNumber;
-        private System.Windows.Forms.Label lblCustomerName;
-        private System.Windows.Forms.Label lblCustomerID;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListBox lstCustomers;
-        private System.Windows.Forms.Label lblBalance;
-        private System.Windows.Forms.Label lblCustomerRoom;
-        private System.Windows.Forms.TextBox txtFilter;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radBalance;
-        private System.Windows.Forms.RadioButton radAll;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel lblStatus;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingSource roomBindingSource;
-        private RoomDataSet roomDataSet;
-        private RoomDataSetTableAdapters.RoomTableAdapter roomTableAdapter;
-        private RoomDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.Button btnManageEmployees;
-        private System.Windows.Forms.ListBox lstEmployees;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TabPage tabRooms;
+        private System.Windows.Forms.TabPage tabEmployees;
+        private System.Windows.Forms.Panel panelLogin;
+        private System.Windows.Forms.StatusStrip mainStatusStrip;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblPhoneNumber;
-        private System.Windows.Forms.Label lblPosition;
-        private System.Windows.Forms.DataGridView roomDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.BindingNavigator roomBindingNavigator;
+        public System.Windows.Forms.Button btnLogin;
+        public System.Windows.Forms.MaskedTextBox txtPassword;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtUsername;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ToolStripStatusLabel lblLoginStatus;
+        public System.Windows.Forms.Button btnLogout;
+        public System.Windows.Forms.Panel panelRooms;
+        public System.Windows.Forms.Panel panelEmployees;
+        private System.Windows.Forms.TabPage tabCustomers;
+        public System.Windows.Forms.Panel panelCustomers;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutCustomerDetails;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.ListBox lstCustomers;
+        public System.Windows.Forms.Label lblCustomerBalance;
+        public System.Windows.Forms.Label lblCustomerRoom;
+        public System.Windows.Forms.Label lblCustomerTelephone;
+        public System.Windows.Forms.Label lblCustomerName;
+        public System.Windows.Forms.Label lblCustomerID;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.RadioButton radDisplayOutstandingBalance;
+        public System.Windows.Forms.RadioButton radDisplayAllCustomers;
+        public System.Windows.Forms.TextBox txtCustomerFilter;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        public System.Windows.Forms.Label lblEmployeeDateHired;
+        public System.Windows.Forms.Label lblEmployeeTelephone;
+        public System.Windows.Forms.Label lblEmployeePosition;
+        public System.Windows.Forms.Label lblEmployeeName;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        public System.Windows.Forms.Label lblEmployeeID;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.ListBox lstEmpoloyees;
+        public System.Windows.Forms.Label lblEmployeeStatus;
+        private System.Windows.Forms.Button btnManageEmployees;
+        private System.Windows.Forms.Button btnManageCustomers;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
         private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
@@ -940,7 +1100,20 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton roomBindingNavigatorSaveItem;
+        private System.Windows.Forms.ToolStripButton openToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        public System.Windows.Forms.BindingNavigator roomsNavigator;
+        public System.Windows.Forms.DataGridView roomsTable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reservedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn availableDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateReservedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reservedUntilDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reservedByCustomerDataGridViewTextBoxColumn;
+        public System.Windows.Forms.ToolStripButton roomSaveToolStripButton;
+        public System.Windows.Forms.BindingSource roomsBindingSource;
+        public HotelDataSetTableAdapters.RoomsTableAdapter roomsTableAdapter;
+        public HotelDataSet hotelDataSet;
     }
 }
 

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Final_Project.ViewController
+namespace Final_Project
 {
     public class CustomerViewController : ViewController
     {
@@ -118,7 +118,7 @@ namespace Final_Project.ViewController
         {
             if (Application.OpenForms["CustomerManagerDialog"] != null)
             {
-                ((CustomerManagerDialog)Application.OpenForms["CustomerManagerDialog"].BringToFront();
+                ((CustomerManagerDialog)Application.OpenForms["CustomerManagerDialog"]).BringToFront();
             }
             else
             {

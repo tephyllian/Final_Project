@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Final_Project.ViewController
+namespace Final_Project
 {
     public abstract class ViewController
     {

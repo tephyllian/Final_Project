@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7434A4F9-E913-47EF-8DC6-B2378D218E0C}</ProjectGuid>
+    <ProjectGuid>{5206DA98-21E2-4DF3-B324-B30A972664E9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Final_Project</RootNamespace>
     <AssemblyName>Final_Project</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -56,50 +55,63 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerDataSet.Designer.cs">
+    <Compile Include="Dialogs\CheckInDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CheckInDialog.Designer.cs">
+      <DependentUpon>CheckInDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CustomerManagerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CustomerManagerDialog.Designer.cs">
+      <DependentUpon>CustomerManagerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\EmployeeManagerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EmployeeManagerDialog.Designer.cs">
+      <DependentUpon>EmployeeManagerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelDataSet.cs">
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HotelDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CustomerModelController.cs" />
-    <Compile Include="CustomerViewController.cs" />
-    <Compile Include="EmployeeModelController.cs" />
-    <Compile Include="EmployeeViewController.cs" />
-    <Compile Include="LoginModelController.cs" />
-    <Compile Include="LoginsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LoginsDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="LoginViewController.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainForm1.cs" />
-    <Compile Include="ModelController.cs" />
+    <Compile Include="ModelControllers\CustomerModelController.cs" />
+    <Compile Include="ModelControllers\EmployeeModelController.cs" />
+    <Compile Include="ModelControllers\LoginModelController.cs" />
+    <Compile Include="ModelControllers\ModelController.cs" />
+    <Compile Include="ModelControllers\RoomModelController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoomDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RoomDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="RoomModelController.cs" />
-    <Compile Include="RoomViewController.cs" />
-    <Compile Include="StaffDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StaffDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewControllers\CustomerViewController.cs" />
+    <Compile Include="ViewControllers\EmployeeViewController.cs" />
+    <Compile Include="ViewControllers\LoginViewController.cs" />
+    <Compile Include="ViewControllers\RoomViewController.cs" />
+    <Compile Include="ViewControllers\ViewController.cs" />
+    <EmbeddedResource Include="Dialogs\CheckInDialog.resx">
+      <DependentUpon>CheckInDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CustomerManagerDialog.resx">
+      <DependentUpon>CustomerManagerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EmployeeManagerDialog.resx">
+      <DependentUpon>EmployeeManagerDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,27 +124,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="CustomerDataSet.xsc">
-      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    <None Include="HotelDataSet.xsc">
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
     </None>
-    <None Include="CustomerDataSet.xsd">
+    <None Include="HotelDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CustomerDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>HotelDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="CustomerDataSet.xss">
-      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LoginsDataSet.xsc">
-      <DependentUpon>LoginsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LoginsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LoginsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LoginsDataSet.xss">
-      <DependentUpon>LoginsDataSet.xsd</DependentUpon>
+    <None Include="HotelDataSet.xss">
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -143,46 +144,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="RoomDataSet.xsc">
-      <DependentUpon>RoomDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="RoomDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>RoomDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="RoomDataSet.xss">
-      <DependentUpon>RoomDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="StaffDataSet.xsc">
-      <DependentUpon>StaffDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="StaffDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StaffDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="StaffDataSet.xss">
-      <DependentUpon>StaffDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Hotel.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Hotel_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Hotel.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
       <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
@@ -190,6 +174,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
