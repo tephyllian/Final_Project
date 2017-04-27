@@ -37,6 +37,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabRooms = new System.Windows.Forms.TabPage();
             this.panelRooms = new System.Windows.Forms.Panel();
+            this.roomsNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hotelDataSet = new Final_Project.HotelDataSet();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.roomSaveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.roomsTable = new System.Windows.Forms.DataGridView();
+            this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateReservedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservedUntilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservedByCustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabEmployees = new System.Windows.Forms.TabPage();
             this.panelEmployees = new System.Windows.Forms.Panel();
             this.btnManageEmployees = new System.Windows.Forms.Button();
@@ -79,35 +102,17 @@
             this.lstCustomers = new System.Windows.Forms.ListBox();
             this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
             this.lblLoginStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.roomsTable = new System.Windows.Forms.DataGridView();
-            this.roomsNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.roomSaveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.hotelDataSet = new Final_Project.HotelDataSet();
-            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.roomsTableAdapter = new Final_Project.HotelDataSetTableAdapters.RoomsTableAdapter();
-            this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reservedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateReservedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reservedUntilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reservedByCustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlMain.SuspendLayout();
             this.tabLogin.SuspendLayout();
             this.panelLogin.SuspendLayout();
             this.tabRooms.SuspendLayout();
             this.panelRooms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsNavigator)).BeginInit();
+            this.roomsNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsTable)).BeginInit();
             this.tabEmployees.SuspendLayout();
             this.panelEmployees.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -119,11 +124,6 @@
             this.tableLayoutCustomerDetails.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.mainStatusStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomsTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomsNavigator)).BeginInit();
-            this.roomsNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -270,6 +270,201 @@
             this.panelRooms.Size = new System.Drawing.Size(567, 366);
             this.panelRooms.TabIndex = 0;
             // 
+            // roomsNavigator
+            // 
+            this.roomsNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.roomsNavigator.BindingSource = this.roomsBindingSource;
+            this.roomsNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.roomsNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.roomsNavigator.Dock = System.Windows.Forms.DockStyle.None;
+            this.roomsNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.openToolStripButton,
+            this.roomSaveToolStripButton,
+            this.toolStripSeparator1});
+            this.roomsNavigator.Location = new System.Drawing.Point(3, 341);
+            this.roomsNavigator.MoveFirstItem = null;
+            this.roomsNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.roomsNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.roomsNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.roomsNavigator.Name = "roomsNavigator";
+            this.roomsNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.roomsNavigator.Size = new System.Drawing.Size(284, 25);
+            this.roomsNavigator.TabIndex = 1;
+            this.roomsNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // roomsBindingSource
+            // 
+            this.roomsBindingSource.DataMember = "Rooms";
+            this.roomsBindingSource.DataSource = this.hotelDataSet;
+            // 
+            // hotelDataSet
+            // 
+            this.hotelDataSet.DataSetName = "HotelDataSet";
+            this.hotelDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // openToolStripButton
+            // 
+            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripButton.Name = "openToolStripButton";
+            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Text = "&Open";
+            // 
+            // roomSaveToolStripButton
+            // 
+            this.roomSaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.roomSaveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("roomSaveToolStripButton.Image")));
+            this.roomSaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.roomSaveToolStripButton.Name = "roomSaveToolStripButton";
+            this.roomSaveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.roomSaveToolStripButton.Text = "&Save";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // roomsTable
+            // 
+            this.roomsTable.AllowUserToDeleteRows = false;
+            this.roomsTable.AutoGenerateColumns = false;
+            this.roomsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.roomsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.roomNumberDataGridViewTextBoxColumn,
+            this.reservedDataGridViewTextBoxColumn,
+            this.availableDataGridViewTextBoxColumn,
+            this.dateReservedDataGridViewTextBoxColumn,
+            this.reservedUntilDataGridViewTextBoxColumn,
+            this.reservedByCustomerDataGridViewTextBoxColumn});
+            this.roomsTable.DataSource = this.roomsBindingSource;
+            this.roomsTable.Location = new System.Drawing.Point(3, 3);
+            this.roomsTable.Name = "roomsTable";
+            this.roomsTable.Size = new System.Drawing.Size(558, 335);
+            this.roomsTable.TabIndex = 0;
+            // 
+            // roomNumberDataGridViewTextBoxColumn
+            // 
+            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
+            // 
+            // reservedDataGridViewTextBoxColumn
+            // 
+            this.reservedDataGridViewTextBoxColumn.DataPropertyName = "Reserved";
+            this.reservedDataGridViewTextBoxColumn.HeaderText = "Reserved";
+            this.reservedDataGridViewTextBoxColumn.Name = "reservedDataGridViewTextBoxColumn";
+            // 
+            // availableDataGridViewTextBoxColumn
+            // 
+            this.availableDataGridViewTextBoxColumn.DataPropertyName = "Available";
+            this.availableDataGridViewTextBoxColumn.HeaderText = "Available";
+            this.availableDataGridViewTextBoxColumn.Name = "availableDataGridViewTextBoxColumn";
+            // 
+            // dateReservedDataGridViewTextBoxColumn
+            // 
+            this.dateReservedDataGridViewTextBoxColumn.DataPropertyName = "DateReserved";
+            this.dateReservedDataGridViewTextBoxColumn.HeaderText = "DateReserved";
+            this.dateReservedDataGridViewTextBoxColumn.Name = "dateReservedDataGridViewTextBoxColumn";
+            // 
+            // reservedUntilDataGridViewTextBoxColumn
+            // 
+            this.reservedUntilDataGridViewTextBoxColumn.DataPropertyName = "ReservedUntil";
+            this.reservedUntilDataGridViewTextBoxColumn.HeaderText = "ReservedUntil";
+            this.reservedUntilDataGridViewTextBoxColumn.Name = "reservedUntilDataGridViewTextBoxColumn";
+            // 
+            // reservedByCustomerDataGridViewTextBoxColumn
+            // 
+            this.reservedByCustomerDataGridViewTextBoxColumn.DataPropertyName = "ReservedByCustomer";
+            this.reservedByCustomerDataGridViewTextBoxColumn.HeaderText = "ReservedByCustomer";
+            this.reservedByCustomerDataGridViewTextBoxColumn.Name = "reservedByCustomerDataGridViewTextBoxColumn";
+            // 
             // tabEmployees
             // 
             this.tabEmployees.Controls.Add(this.panelEmployees);
@@ -352,7 +547,7 @@
             // 
             this.lblEmployeeStatus.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEmployeeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeStatus.Location = new System.Drawing.Point(109, 125);
+            this.lblEmployeeStatus.Location = new System.Drawing.Point(146, 125);
             this.lblEmployeeStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeStatus.Name = "lblEmployeeStatus";
             this.lblEmployeeStatus.Size = new System.Drawing.Size(256, 23);
@@ -363,7 +558,7 @@
             // 
             this.lblEmployeeDateHired.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEmployeeDateHired.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeDateHired.Location = new System.Drawing.Point(109, 100);
+            this.lblEmployeeDateHired.Location = new System.Drawing.Point(146, 100);
             this.lblEmployeeDateHired.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeDateHired.Name = "lblEmployeeDateHired";
             this.lblEmployeeDateHired.Size = new System.Drawing.Size(256, 25);
@@ -374,7 +569,7 @@
             // 
             this.lblEmployeeTelephone.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEmployeeTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeTelephone.Location = new System.Drawing.Point(109, 75);
+            this.lblEmployeeTelephone.Location = new System.Drawing.Point(146, 75);
             this.lblEmployeeTelephone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeTelephone.Name = "lblEmployeeTelephone";
             this.lblEmployeeTelephone.Size = new System.Drawing.Size(256, 25);
@@ -385,7 +580,7 @@
             // 
             this.lblEmployeePosition.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEmployeePosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeePosition.Location = new System.Drawing.Point(109, 50);
+            this.lblEmployeePosition.Location = new System.Drawing.Point(146, 50);
             this.lblEmployeePosition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeePosition.Name = "lblEmployeePosition";
             this.lblEmployeePosition.Size = new System.Drawing.Size(256, 25);
@@ -396,7 +591,7 @@
             // 
             this.lblEmployeeName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeName.Location = new System.Drawing.Point(109, 25);
+            this.lblEmployeeName.Location = new System.Drawing.Point(146, 25);
             this.lblEmployeeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeName.Name = "lblEmployeeName";
             this.lblEmployeeName.Size = new System.Drawing.Size(256, 25);
@@ -408,7 +603,7 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(78, 0);
+            this.label15.Location = new System.Drawing.Point(115, 0);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(27, 24);
@@ -420,7 +615,7 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(44, 25);
+            this.label16.Location = new System.Drawing.Point(81, 25);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(61, 24);
@@ -432,7 +627,7 @@
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(29, 50);
+            this.label17.Location = new System.Drawing.Point(66, 50);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(76, 24);
@@ -447,15 +642,15 @@
             this.label18.Location = new System.Drawing.Point(2, 75);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(103, 24);
+            this.label18.Size = new System.Drawing.Size(140, 24);
             this.label18.TabIndex = 3;
-            this.label18.Text = "Telephone";
+            this.label18.Text = "Phone Number";
             // 
             // lblEmployeeID
             // 
             this.lblEmployeeID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEmployeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeID.Location = new System.Drawing.Point(109, 0);
+            this.lblEmployeeID.Location = new System.Drawing.Point(146, 0);
             this.lblEmployeeID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeID.Name = "lblEmployeeID";
             this.lblEmployeeID.Size = new System.Drawing.Size(256, 25);
@@ -467,7 +662,7 @@
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(6, 100);
+            this.label19.Location = new System.Drawing.Point(43, 100);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(99, 24);
@@ -479,7 +674,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(45, 127);
+            this.label10.Location = new System.Drawing.Point(82, 127);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 24);
@@ -633,7 +828,7 @@
             // 
             this.lblCustomerBalance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCustomerBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerBalance.Location = new System.Drawing.Point(134, 108);
+            this.lblCustomerBalance.Location = new System.Drawing.Point(146, 108);
             this.lblCustomerBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerBalance.Name = "lblCustomerBalance";
             this.lblCustomerBalance.Size = new System.Drawing.Size(256, 27);
@@ -644,7 +839,7 @@
             // 
             this.lblCustomerRoom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCustomerRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerRoom.Location = new System.Drawing.Point(134, 81);
+            this.lblCustomerRoom.Location = new System.Drawing.Point(146, 81);
             this.lblCustomerRoom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerRoom.Name = "lblCustomerRoom";
             this.lblCustomerRoom.Size = new System.Drawing.Size(256, 27);
@@ -655,7 +850,7 @@
             // 
             this.lblCustomerTelephone.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCustomerTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerTelephone.Location = new System.Drawing.Point(134, 54);
+            this.lblCustomerTelephone.Location = new System.Drawing.Point(146, 54);
             this.lblCustomerTelephone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerTelephone.Name = "lblCustomerTelephone";
             this.lblCustomerTelephone.Size = new System.Drawing.Size(256, 27);
@@ -666,7 +861,7 @@
             // 
             this.lblCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerName.Location = new System.Drawing.Point(134, 27);
+            this.lblCustomerName.Location = new System.Drawing.Point(146, 27);
             this.lblCustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(256, 27);
@@ -678,7 +873,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(98, 1);
+            this.label4.Location = new System.Drawing.Point(110, 1);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 24);
@@ -690,7 +885,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(69, 28);
+            this.label5.Location = new System.Drawing.Point(81, 28);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 24);
@@ -702,19 +897,19 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 55);
+            this.label6.Location = new System.Drawing.Point(2, 55);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 24);
+            this.label6.Size = new System.Drawing.Size(140, 24);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Telephone";
+            this.label6.Text = "Phone Number";
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(2, 82);
+            this.label7.Location = new System.Drawing.Point(14, 82);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 24);
@@ -726,7 +921,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 110);
+            this.label8.Location = new System.Drawing.Point(24, 110);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 24);
@@ -737,7 +932,7 @@
             // 
             this.lblCustomerID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCustomerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerID.Location = new System.Drawing.Point(134, 0);
+            this.lblCustomerID.Location = new System.Drawing.Point(146, 0);
             this.lblCustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerID.Name = "lblCustomerID";
             this.lblCustomerID.Size = new System.Drawing.Size(256, 27);
@@ -786,204 +981,9 @@
             this.lblLoginStatus.Size = new System.Drawing.Size(83, 17);
             this.lblLoginStatus.Text = "Not Logged In";
             // 
-            // roomsTable
-            // 
-            this.roomsTable.AllowUserToDeleteRows = false;
-            this.roomsTable.AutoGenerateColumns = false;
-            this.roomsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.roomsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.roomNumberDataGridViewTextBoxColumn,
-            this.reservedDataGridViewTextBoxColumn,
-            this.availableDataGridViewTextBoxColumn,
-            this.dateReservedDataGridViewTextBoxColumn,
-            this.reservedUntilDataGridViewTextBoxColumn,
-            this.reservedByCustomerDataGridViewTextBoxColumn});
-            this.roomsTable.DataSource = this.roomsBindingSource;
-            this.roomsTable.Location = new System.Drawing.Point(3, 3);
-            this.roomsTable.Name = "roomsTable";
-            this.roomsTable.Size = new System.Drawing.Size(558, 335);
-            this.roomsTable.TabIndex = 0;
-            // 
-            // roomsNavigator
-            // 
-            this.roomsNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.roomsNavigator.BindingSource = this.roomsBindingSource;
-            this.roomsNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.roomsNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.roomsNavigator.Dock = System.Windows.Forms.DockStyle.None;
-            this.roomsNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.openToolStripButton,
-            this.roomSaveToolStripButton,
-            this.toolStripSeparator1});
-            this.roomsNavigator.Location = new System.Drawing.Point(3, 341);
-            this.roomsNavigator.MoveFirstItem = null;
-            this.roomsNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.roomsNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.roomsNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.roomsNavigator.Name = "roomsNavigator";
-            this.roomsNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.roomsNavigator.Size = new System.Drawing.Size(284, 25);
-            this.roomsNavigator.TabIndex = 1;
-            this.roomsNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // openToolStripButton
-            // 
-            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
-            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.openToolStripButton.Text = "&Open";
-            // 
-            // roomSaveToolStripButton
-            // 
-            this.roomSaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.roomSaveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("roomSaveToolStripButton.Image")));
-            this.roomSaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.roomSaveToolStripButton.Name = "roomSaveToolStripButton";
-            this.roomSaveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.roomSaveToolStripButton.Text = "&Save";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // hotelDataSet
-            // 
-            this.hotelDataSet.DataSetName = "HotelDataSet";
-            this.hotelDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // roomsBindingSource
-            // 
-            this.roomsBindingSource.DataMember = "Rooms";
-            this.roomsBindingSource.DataSource = this.hotelDataSet;
-            // 
             // roomsTableAdapter
             // 
             this.roomsTableAdapter.ClearBeforeFill = true;
-            // 
-            // roomNumberDataGridViewTextBoxColumn
-            // 
-            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
-            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
-            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
-            // 
-            // reservedDataGridViewTextBoxColumn
-            // 
-            this.reservedDataGridViewTextBoxColumn.DataPropertyName = "Reserved";
-            this.reservedDataGridViewTextBoxColumn.HeaderText = "Reserved";
-            this.reservedDataGridViewTextBoxColumn.Name = "reservedDataGridViewTextBoxColumn";
-            // 
-            // availableDataGridViewTextBoxColumn
-            // 
-            this.availableDataGridViewTextBoxColumn.DataPropertyName = "Available";
-            this.availableDataGridViewTextBoxColumn.HeaderText = "Available";
-            this.availableDataGridViewTextBoxColumn.Name = "availableDataGridViewTextBoxColumn";
-            // 
-            // dateReservedDataGridViewTextBoxColumn
-            // 
-            this.dateReservedDataGridViewTextBoxColumn.DataPropertyName = "DateReserved";
-            this.dateReservedDataGridViewTextBoxColumn.HeaderText = "DateReserved";
-            this.dateReservedDataGridViewTextBoxColumn.Name = "dateReservedDataGridViewTextBoxColumn";
-            // 
-            // reservedUntilDataGridViewTextBoxColumn
-            // 
-            this.reservedUntilDataGridViewTextBoxColumn.DataPropertyName = "ReservedUntil";
-            this.reservedUntilDataGridViewTextBoxColumn.HeaderText = "ReservedUntil";
-            this.reservedUntilDataGridViewTextBoxColumn.Name = "reservedUntilDataGridViewTextBoxColumn";
-            // 
-            // reservedByCustomerDataGridViewTextBoxColumn
-            // 
-            this.reservedByCustomerDataGridViewTextBoxColumn.DataPropertyName = "ReservedByCustomer";
-            this.reservedByCustomerDataGridViewTextBoxColumn.HeaderText = "ReservedByCustomer";
-            this.reservedByCustomerDataGridViewTextBoxColumn.Name = "reservedByCustomerDataGridViewTextBoxColumn";
             // 
             // MainForm
             // 
@@ -1008,6 +1008,12 @@
             this.tabRooms.ResumeLayout(false);
             this.panelRooms.ResumeLayout(false);
             this.panelRooms.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsNavigator)).EndInit();
+            this.roomsNavigator.ResumeLayout(false);
+            this.roomsNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsTable)).EndInit();
             this.tabEmployees.ResumeLayout(false);
             this.panelEmployees.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
@@ -1023,12 +1029,6 @@
             this.groupBox2.ResumeLayout(false);
             this.mainStatusStrip.ResumeLayout(false);
             this.mainStatusStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomsTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomsNavigator)).EndInit();
-            this.roomsNavigator.ResumeLayout(false);
-            this.roomsNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
